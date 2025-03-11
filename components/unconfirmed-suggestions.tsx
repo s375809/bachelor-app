@@ -223,7 +223,7 @@ export function UnconfirmedSuggestions({
                       <SelectValue placeholder="Aktivitetstype" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="Møte">Møte</SelectItem>
+                      <SelectItem value="Møte">Juridisk Bistand</SelectItem>
                       <SelectItem value="Forskning">Forskning</SelectItem>
                       <SelectItem value="Gjennomgang">Gjennomgang</SelectItem>
                       <SelectItem value="Dokumentskriving">Dokumentskriving</SelectItem>
