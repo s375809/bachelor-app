@@ -249,7 +249,7 @@ export default function TimeTrackingPage() {
       <SidebarInset>
         <div className="flex flex-col min-h-screen bg-gray-50">
           <header className="flex items-center h-16 px-4 border-b bg-white shadow-sm">
-            <h1 className="text-xl font-bold text-gray-800">SmartTimer</h1>
+            <h1 className="text-xl font-bold text-gray-800">Timeregsitrering</h1>
           </header>
           <main className="flex-1 p-4 space-y-4">
             {/* Hurtig aktivitetsregistrering */}
