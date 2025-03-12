@@ -8,9 +8,9 @@ import { cn } from "@/lib/utils"
 import { Sidebar, SidebarContent, SidebarMenu, SidebarMenuItem, SidebarMenuButton } from "@/components/ui/sidebar"
 
 export function AppSidebar() {
-  const pathname = usePathname()
+  const pathname = usePathname() // Henter nåværende sti for å markere aktivt sidefelt-element
 
-  // Navigasjonselementer for sidefeltet
+  // Definerer navigasjonselementer for sidefeltet
   const navItems = [
     {
       title: "Dashbord",
@@ -42,6 +42,7 @@ export function AppSidebar() {
   return (
     <Sidebar side="left" variant="sidebar" collapsible="icon" className="bg-[#2a3f9d] text-white border-r-0">
       <SidebarContent>
+        {/* Toppseksjon med logo eller initialer */}
         <div className="flex justify-center items-center h-16 border-b border-blue-800">
           <Link
             href="/"
@@ -50,12 +51,14 @@ export function AppSidebar() {
             S
           </Link>
         </div>
+
+        {/* Hovednavigasjonsmeny */}
         <SidebarMenu>
           {navItems.map((item) => (
             <SidebarMenuItem key={item.title}>
               <SidebarMenuButton
                 asChild
-                isActive={pathname === item.href}
+                isActive={pathname === item.href} // Marker aktivt element basert på sti
                 tooltip={item.title}
                 className={cn("text-white hover:bg-blue-800", pathname === item.href && "bg-blue-800 font-medium")}
               >
@@ -71,4 +74,3 @@ export function AppSidebar() {
     </Sidebar>
   )
 }
-
