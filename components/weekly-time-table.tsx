@@ -1,4 +1,4 @@
-"use client"; // Dette er en klient-side komponent som krever browser-miljø
+"use client"; 
 
 import { useState, useMemo } from "react";
 import { format, addDays, startOfWeek, isSameDay } from "date-fns";

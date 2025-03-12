@@ -1,4 +1,4 @@
-"use client"
+"use client" // klient-side komponent krever browser-miljø
 
 import { Calendar, Clock, FileText, Settings, UserCheck } from "lucide-react"
 import Link from "next/link"

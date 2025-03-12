@@ -1,4 +1,4 @@
-"use client"; // Dette er en klient-side komponent som krever browser-miljø
+"use client"; 
 
 import React from "react";
 import {
