@@ -14,7 +14,8 @@ export interface TimeEntry {
 export interface Case {
   id: string
   name: string
-  description: string
+  caseNumber: string
+  clientName: string
 }
 
 export interface UnconfirmedSuggestion {
@@ -24,7 +25,6 @@ export interface UnconfirmedSuggestion {
   description: string
   hours: number
   date: Date
-  important: boolean
   confirmed: boolean
 }
 
